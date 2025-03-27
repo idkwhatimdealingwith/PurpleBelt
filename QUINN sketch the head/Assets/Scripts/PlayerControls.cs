@@ -14,7 +14,7 @@ public class PlayerControls : MonoBehaviour
 
     [Header("Movement Settings")]
     [Tooltip("Movement speed of the objects")]
-    public floats movementSpeed = 10f;
+    public float movementSpeed = 10f;
 
     [Tooltip("Movent direction of the object")]
     public float movement = 0f;
@@ -40,5 +40,13 @@ public class PlayerControls : MonoBehaviour
         velocity.x = movement;
 
         rb.velocity = velocity; 
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision) 
+        {
+        if (rb.velocity.y <= 0) 
+            {
+            rb.velocity = new Vector2(rb.velocity.x, downSpeed); 
+        }
     }
 }

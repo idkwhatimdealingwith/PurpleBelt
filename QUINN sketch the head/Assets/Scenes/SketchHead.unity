@@ -394,7 +394,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: a52f196043c0d7e4e9d649f705efffc5, type: 3}
-  m_Color: {r: 0, g: 1, b: 0.19908285, a: 1}
+  m_Color: {r: 0, g: 1, b: 0.20000002, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -623,7 +623,7 @@ MonoBehaviour:
   platform: {fileID: 422047708}
   yPos: 0
   gameOverCanvas: {fileID: 786470380}
-  fakePatform: {fileID: 0}
+  FakePlatform: {fileID: 1485263479}
 --- !u!4 &616527529
 Transform:
   m_ObjectHideFlags: 0
@@ -870,7 +870,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: a52f196043c0d7e4e9d649f705efffc5, type: 3}
-  m_Color: {r: 0.5226415, g: 1, b: 0.6181132, a: 1}
+  m_Color: {r: 0, g: 1, b: 0.3326409, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

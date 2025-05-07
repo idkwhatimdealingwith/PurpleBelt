@@ -18,7 +18,7 @@ public class GameController : MonoBehaviour
         instance.gameOverCanvas.SetActive(true);
     }
 
-    public GameObject fakePatform;  
+    public GameObject FakePlatform;  
     // Start is called before the first frame update
     void Start()
     {
@@ -40,7 +40,7 @@ public class GameController : MonoBehaviour
         float xPosition = Random.Range(-3f, 3f);
         Instantiate(instance.platform, new Vector3(xPosition, instance.yPos, 0), Quaternion.identity);
         instance.yPos += 2.5f;
-        Instantiate(instance.fakePatform, new Vector3(xPosition, instance.yPos, 0), Quaternion.identity);
+        Instantiate(instance.FakePlatform, new Vector3(xPosition, instance.yPos, 0), Quaternion.identity);
     } 
     public static void MovePlatformToTop(GameObject platform) 
     {

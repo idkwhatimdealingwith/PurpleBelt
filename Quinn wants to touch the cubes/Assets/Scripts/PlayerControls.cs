@@ -45,4 +45,8 @@ public class PlayerControls : MonoBehaviour
         // Apply the clamped values to the transform's position 
         transform.position = new Vector3(clampedX, 0, clampedZ);
     }
+    private void OnCollisionEnter(Collision collision) 
+    {
+        SceneManager.LoadScene(0);   
+    }
 }

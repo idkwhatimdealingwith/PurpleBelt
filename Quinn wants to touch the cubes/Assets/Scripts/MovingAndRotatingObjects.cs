@@ -11,7 +11,7 @@ public class MovingAndRotatingObjects : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transfrom.Translate(0, moveSpeed * Time.deltaTime, 0);
+        transform.Translate(0, moveSpeed * Time.deltaTime, 0);
         transform.Rotate(Vector3.up * rotateSpeed * Time.deltaTime); 
     }
 }
